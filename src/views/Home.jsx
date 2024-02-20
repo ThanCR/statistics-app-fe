@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import Counter from '../components/Counter'
 import { getAllInteractions, postInteraction } from '../helpers';
 import './Home.css';
+import NavBar from '../containers/NavBar';
 
 function Home() {
   const [interactionCount, setInteractionCount] = useState()
@@ -17,7 +18,7 @@ function Home() {
 
   return (
     <>
-      <h2>HomeComponent</h2>
+      <NavBar/>
       <Counter interactions={interactionCount} />
       <Button onClick={() => parentToChild()} />
     </>
