@@ -6,7 +6,7 @@ import { getAllInteractions, postInteraction } from '../helpers';
 
 function Dashboard() {
 
-    const [interactionCount, setInteractionCount] = useState()
+  const [interactionCount, setInteractionCount] = useState()
 
   const parentToChild = async () => {
     const interactions = await getAllInteractions()
@@ -15,19 +15,29 @@ function Dashboard() {
   }
 
   return (
-    <>
-      <header className='dashboard-header'>
-        <h1 className='dashboard-title'>Statistics app</h1>
-        <p className='dashboard-subtitle'>This is an automatically analyzing web application able to collect information about the interactions on the components on it.
-          <br />
-          Additionally, you can easily interact with data, download reports and access the source code currently uploaded on GitHub.
-          <br />
-          Feel free to let your own feedback on my personal email and social media.
-        </p>
-      </header>
-      <Counter interactions={interactionCount} />
-      <Button onClick={() => parentToChild()} />
-    </>
+    <div className='dashboard'>
+      <div className='dashboard-card'>
+        <header className='dashboard-header'>
+          <h1 className='dashboard-title'>Statistics app</h1>
+          <p className='dashboard-subtitle'>This is an automatically analyzing web application able to collect information about the interactions on the components on it.
+            <br />
+          </p>
+        </header>
+      </div>
+      <div className='dashboard-card'>
+        <Counter interactions={interactionCount} />
+        <Button onClick={() => parentToChild()} />
+      </div>
+      <div className='dashboard-card long-card'>
+
+      </div>
+      <div className='dashboard-card'>
+        
+      </div>
+      <div className='dashboard-card'>
+        
+      </div>
+    </div>
   );
 }
 

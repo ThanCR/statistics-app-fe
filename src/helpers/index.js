@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8080/api/interaction/'
+const API_URL = 'http://192.168.18.4:8080/api/interaction/'
 const interactionData = {
     type: "Click",
     date: new Date().toLocaleString()

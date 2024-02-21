@@ -1,12 +1,11 @@
 .counter-container{
-    width: 20%;
     margin: 0 auto;
 }
 .counter-value{
-    background-color: #1f1f1f;
-    color: #e6e6e6;
+    color: #1f1f1f;
+    background-color: #e6e6e6;
+    width: 30%;
     border-radius: 10rem;
-    width: 20%;
     padding: .5rem;
     margin: 2rem auto;
 }
