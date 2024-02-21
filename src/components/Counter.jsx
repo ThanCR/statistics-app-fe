@@ -21,12 +21,15 @@ function Counter(props) {
     fetchInitialCount()
   }, [props.interactions])
 
-
-
   return (
     <>
-      <h2>Counter component</h2>
-      <p>{interactionCount}</p>
+      <div className='counter-container'>
+        <h2 className='counter-title'>Total website interactions</h2>
+        <div className='counter-div'>
+          <p className='counter-value'>{interactionCount}</p>
+        </div>
+
+      </div>
     </>
   );
 }

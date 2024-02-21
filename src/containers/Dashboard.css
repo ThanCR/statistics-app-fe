@@ -1,0 +1,16 @@
+.dashboard-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dashboard-subtitle{
+    
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .dashboard-subtitle{
+        font-size: .9rem;
+    }
+}
