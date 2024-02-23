@@ -7,18 +7,18 @@ function SideBar() {
         <>
             <aside className='sidebar-aside'>
                 <ul className='sidebar-list'>
-                    <li className='sidebar-list-item'>
-                        <a href="#">
+                    <li className='sidebar-item'>
+                        <a className='sidebar-icon' href="http://localhost:3000/">
                             <MdDashboard/>
                         </a>
                     </li>
-                    <li className='sidebar-list-item'>
-                        <a href="#">
+                    <li className='sidebar-item'>
+                        <a className='sidebar-icon' href="http://localhost:3000/">
                             <MdInsertChart/>
                         </a>
                     </li>
-                    <li className='sidebar-list-item'>
-                        <a href="#">
+                    <li className='sidebar-item'>
+                        <a className='sidebar-icon' href="http://localhost:3000/">
                             <FaFileAlt/>
                         </a>
                     </li>

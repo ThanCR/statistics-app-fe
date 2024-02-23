@@ -18,7 +18,9 @@ const fetchAllInteractionsPromise = async () => {
     if (!fetchReponse.ok)
         throw new Error('API response was not ok')
     else {
-        return await fetchReponse.json()
+        const promise = fetchReponse.json()
+        const data = await promise
+        return data
     }
 
 }

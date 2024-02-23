@@ -7,7 +7,7 @@
     /* top: 0; */
     /* left: 0; */
 }
-ul{
+.sidebar-list{
     list-style: none;
     width: 70%;
     padding: 1rem;
@@ -15,10 +15,10 @@ ul{
     flex-direction: column;
     justify-content: flex-start;
 }
-li{
+.sidebar-item{
     margin: 2rem 0.5rem;
 }
-a{
+.sidebar-icon{  
     text-decoration: none;
     color: #e0e0e0;
     cursor: pointer;
@@ -26,12 +26,12 @@ a{
 }
 
 @media (max-width: 768px) {
-    ul{
+    .sidebar-list {
         flex-direction: row;
         justify-content: center;
         padding: 0;
     }
-    li{
+    .sidebar-list-item{
         margin: 1rem 2rem;
     }
 
