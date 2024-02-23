@@ -24,7 +24,7 @@ function Dashboard() {
       <div className='dashboard-card'>
       </div>
       <div className='dashboard-card long-card'>
-        <InteractionList data={() => {getAllInteractions()}}/>
+        <InteractionList/>
       </div>
       <div className='dashboard-card'>
         
